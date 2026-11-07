@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Threads | Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Urban Threads</h1>
+        <p>Discover Your Style. Express Yourself.</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#wishlist">My Wishlist</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Find Your Everyday Style</h2>
+            <p>Explore our latest clothing collection
+               and discover styles that fit your personality.</p>
+            <a href="#collection" class="shop-button">
+                Shop Collection
+            </a>
+        </section>
+
+        <section id="collection">
+            <h2>Our Collection</h2>
+            <p>Explore some of our favorite styles.</p>
+
+            <div id="product-list" class="product-grid">
+                <!-- JavaScript will display products here -->
+            </div>
+        </section>
+
+        <section id="wishlist">
+            <h2>My Wishlist</h2>
+            <p>Save your favorite items to find them later.</p>
+
+            <p id="wishlist-count">You have 0 favorite items.</p>
+
+            <div id="wishlist-items" class="product-grid">
+                <!-- Saved favorites appear here -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have a question? Send us a message!</p>
+
+            <form id="contact-form" novalidate>
+
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name">
+                <small id="name-error" class="error"></small>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+                <small id="email-error" class="error"></small>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message"></textarea>
+                <small id="message-error" class="error"></small>
+
+                <button type="submit">Send Message</button>
+
+                <p id="form-success" class="success"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Urban Threads. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
